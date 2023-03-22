@@ -28,8 +28,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
         <jaxb.version>2.3.0</jaxb.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
+            <maven.compiler.source>1.8</maven.compiler.source>
+            <maven.compiler.target>1.8</maven.compiler.target>
+<!--        <maven.compiler.source>${java.version}</maven.compiler.source>-->
+<!--        <maven.compiler.target>${java.version}</maven.compiler.target>-->
     </properties>
 
     <dependencies>
@@ -62,10 +64,10 @@
                 <configuration>
                     <goals>install</goals>
 <!--                    <autoVersionSubmodules>true</autoVersionSubmodules>-->
-<!--                    <checkModificationExcludes>-->
-<!--                        <checkModificationExclude>pom.xml</checkModificationExclude>-->
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
 <!--                        <checkModificationExclude>**</checkModificationExclude>-->
-<!--                    </checkModificationExcludes>-->
+                    </checkModificationExcludes>
                 </configuration>
             </plugin>
 <!--            <plugin>-->
